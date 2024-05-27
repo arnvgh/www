@@ -23,27 +23,37 @@ type WakatimeRes = {
 };
 
 const getCodingHrs = async () => {
-  const res = await fetch(
-    "https://wakatime.com/api/v1/users/current/all_time_since_today",
-    {
-      headers: {
-        Authorization: `Basic ${Buffer.from(env.WAKATIME_API_KEY).toString(
-          "base64"
-        )}`,
+  try {
+
+    const res = await fetch(
+      "https://wakatime.com/api/v1/users/current/all_time_since_today",
+      {
+        headers: {
+          Authorization: `Basic ${Buffer.from(env.WAKATIME_API_KEY).toString(
+            "base64"
+          )}`,
+        },
       },
-      cache: 'no-store'
-    },
-  );
+    );
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    const data: WakatimeRes = await res.json();
 
-  const data: WakatimeRes = await res.json();
+    console.log(data)
 
-  return {
-    seconds: data.data.total_seconds,
-  };
+    return {
+      seconds: data.data.total_seconds,
+    }
+  }
+  catch (error) {
+    console.error('Fetch failed: ', error);
+    throw error; // rethrow the error after logging it
+  }
 }
 
 export const WakatimeStats = async () => {
-  const { seconds } = await getCodingHrs();
+  // const { seconds } = await getCodingHrs();
 
   return (
     <a
@@ -56,7 +66,8 @@ export const WakatimeStats = async () => {
         <LogosVisualStudioCode className="absolute blur-sm text-[60px] top-0 left-0 -rotate-45 brightness-50" />
         <span className="font-semibold items-center font-mono text-3xl -rotate-2">
           {/* <Code2 className="inline-block mr-1 -mt-[0.15rem]" size={18} /> */}
-          {Math.round(seconds / 3600)}h
+          {/* {Math.round(seconds / 3600)}h */}
+          865hr
         </span>
         <span className="text-sm">coding stats</span>
         <span className="text-[10px]">(wakatime)</span>
