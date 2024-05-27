@@ -72,12 +72,6 @@ export default function RootLayout({ children }: ChildrenProps) {
               priority
             />
           </div>
-          <noscript>
-            <p className="bg-yellow-100 mx-auto text-center p-2">
-              JavaScript is disabled. Some functionalities might not work
-              properly.
-            </p>
-          </noscript>
           <Toaster />
         </ThemeProvider>
       </body>

@@ -22,6 +22,7 @@ export const MusicCard = () => {
       ? "Yesterday"
       : capitalize(formatDistanceToNow(absoluteDate, { addSuffix: true }));
   }, [absoluteDate]);
+
   return (
     <Link
       className="bg-[#000] h-36 text-white rounded-lg items-center flex justify-center relative overflow-hidden hover:scale-95 duration-500 transform-gpu"
@@ -44,23 +45,27 @@ export const MusicCard = () => {
         <br />
         <span className="absolute text-sm font-normal truncate">{title}</span>
       </div>
-      <Image
-        src={cover!}
-        alt={title!}
-        className="blur-lg absolute -bottom-3 -left-12  brightness-50"
-        width={500}
-        height={500}
-      />
-      <Image
-        src={cover!}
-        alt={title!}
-        className={`absolute rounded-full -bottom-10 -left-14 overflow-hidden ${
-          playing && "animate-slow-spin"
-        }`}
-        placeholder="empty"
-        width={200}
-        height={200}
-      />
+      {cover && title &&
+        <>
+          <Image
+            src={cover}
+            alt={title!}
+            className="blur-lg absolute -bottom-3 -left-12  brightness-50"
+            width={500}
+            height={500}
+          />
+
+          <Image
+            src={cover}
+            alt={title!}
+            className={`absolute rounded-full -bottom-10 -left-14 overflow-hidden ${playing && "animate-slow-spin"
+              }`}
+            placeholder="empty"
+            width={200}
+            height={200}
+          />
+        </>
+      }
     </Link>
   );
 };

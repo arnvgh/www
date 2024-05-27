@@ -23,12 +23,12 @@ export const DCStatus = () => {
             offline
           </p>
         ) : (
-          <p className="text-xl font-semibold text-black dark:text-white">
+          <div className="text-xl font-semibold text-black dark:text-white">
             {data?.data.discord_status}
             <p className="text-sm">
               (@arnvgh)
             </p>
-          </p>
+          </div>
         )}
       </div>
     </div>

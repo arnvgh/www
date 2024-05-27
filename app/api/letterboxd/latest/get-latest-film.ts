@@ -44,6 +44,7 @@ export interface Response {
   year: number;
 }
 
+// TODO: refactor
 export async function getLatestFilm(): Promise<Response | undefined> {
   try {
     const response = await fetch(LETTERBOXD_FEED, {

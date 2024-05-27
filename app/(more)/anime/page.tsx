@@ -13,13 +13,13 @@ const animePage = () => {
     <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Anime</h1>
-        <p className="pb-5">
+        <p className="pb-3">
           I have loved watching anime since childhood. My first anime was Death
           Note, which is one of the most popular ones. It was suggested to me by
           a friend. Since then, I have watched many anime of different genres,
           but Isekai, Mecha, and Slice of Life are some of my favorites.
         </p>
-        <LatestFilm className="min-w-0 max-w-full" />
+        { /*<LatestFilm className="min-w-0 max-w-full" /> */}
         <p className="pt-5">Below are some of my all-time favorite anime.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">

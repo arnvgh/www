@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img2 from "@/public/images/(home)/0002.jpg";
+import ghCat from "@/public/images/(home)/0002.jpg";
 import { Github } from "lucide-react";
 
 export const GHLink = () => {
@@ -14,8 +14,9 @@ export const GHLink = () => {
         className="pointer-events-none absolute inset-0 -z-20"
       >
         <Image
-          src={img2}
+          src={ghCat}
           alt="cat img"
+          priority={true}
           className="rounded-lg absolute inset-0 h-full w-full object-cover object-center brightness-[0.7] "
         />
         <span
