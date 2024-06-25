@@ -13,11 +13,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/",
-        destination: "https://arnvgh.github.io",
-        permanent: true,
-      },
-      {
         source: "/github",
         destination: "https://github.com/arnvgh",
         permanent: true,
