@@ -31,7 +31,7 @@ export const AllTabs = () => {
 const EverydayTabData = [
   {
     key: "Laptop",
-    desc: "Lenovo Legion 5 Pro running Arch Linux (btw!)",
+    desc: "Lenovo AMD Ryzen X + 16 GB RAM + NVIDIA GeForce GTX 30XX + 2TB SSD",
   },
   {
     key: "Old Laptop",
@@ -40,22 +40,6 @@ const EverydayTabData = [
   {
     key: "Secondary Monitor",
     desc: "BenQ GW2283 (22 inch)",
-  },
-  {
-    key: "Phone",
-    desc: "OnePlus Nord CE 3 5G",
-  },
-  {
-    key: "Earphones",
-    desc: "OnePlus Nord Buds 2",
-  },
-  {
-    key: "Smartwatch",
-    desc: "Nope, I always prefer an analog one. I don't remember the exact model, but the one I currently have is from Fossil and was a birthday present.",
-  },
-  {
-    key: "Backpack",
-    desc: "Nothing fancy, just a generic one.",
   },
 ];
 
@@ -77,7 +61,7 @@ export const EverydayTab = () => {
 const SoftwareTabData = [
   {
     key: "OS",
-    desc: "Arch Linux",
+    desc: "Fedora Linux",
   },
   {
     key: "Init System",
@@ -89,19 +73,15 @@ const SoftwareTabData = [
   },
   {
     key: "Window Manager",
-    desc: "bspwm",
+    desc: "i3wm",
   },
   {
     key: "Terminal",
-    desc: "Kitty",
+    desc: "Alacritty",
   },
   {
     key: "Text Editor",
     desc: "Neovim",
-  },
-  {
-    key: "Status Bars",
-    desc: "Polybar",
   },
   {
     key: "Video Streaming",
@@ -113,7 +93,7 @@ const SoftwareTabData = [
   },
   {
     key: "Notes",
-    desc: "Neovim + Vimwiki",
+    desc: "Neovim+Telescope",
   },
   {
     key: "Password Manager",
@@ -141,18 +121,15 @@ export const SoftwareTab = () => {
 };
 
 const BrowserTabData = [
-  // {
-  //   desc: "Chromium Web Store",
-  // },
   {
     desc: "OneTab",
   },
   {
     desc: "Dark Reader",
   },
-  // {
-  //   desc: "JSON Viewer",
-  // },
+  {
+    desc: "JSON Viewer",
+  },
   {
     desc: "uBlock Origin",
   },
@@ -168,9 +145,9 @@ const BrowserTabData = [
   {
     desc: "Unhook",
   },
-  // {
-  //   desc: "Google Docs Offline",
-  // },
+  {
+    desc: "Google Docs Offline",
+  },
 ];
 
 export const BrowserTab = () => {
@@ -180,8 +157,8 @@ export const BrowserTab = () => {
         <h1 className="text-2xl font-bold py-8">Browser</h1>
 
         <div className="pb-5">
-          I use <code>firefox-developer-edition</code> as my primary browser,
-          and <code>ungoogled-chromium</code> as my secondary browser, along
+          I use <code>chromium</code> as my primary browser, and{" "}
+          <code>firefox-developer-edition</code> as my secondary browser, along
           with following extensions:
         </div>
       </div>
@@ -203,8 +180,7 @@ export const CodingTab = () => {
       <h1 className="text-2xl font-bold py-8">Coding</h1>
 
       <div className="pb-5">
-        I use Neovim most of the time, and VSCodium with
-        Vim Extension ({""}
+        I use Neovim most of the time, and VSCode with Vim Extension ({""}
         <a
           href="https://gist.github.com/arnvgh/32e28c0d699a6685017a5e2ba606e1ab"
           target="_blank"
@@ -213,8 +189,7 @@ export const CodingTab = () => {
         >
           Settings
         </a>
-        {""}) for web and some of my other projects, for python related stuff I
-        use PyCharm cause of Pylance compalibitly issues with VSCodium.
+        {""}) for web and some of my other projects.
       </div>
 
       <div>
@@ -223,7 +198,7 @@ export const CodingTab = () => {
       </div>
       <div>
         <span className="font-medium dark:text-white">Theme: </span>
-        <span className="text-zinc-600 dark:text-zinc-400">Tokyo Night</span>
+        <span className="text-zinc-600 dark:text-zinc-400">Vitesse Theme</span>
       </div>
     </div>
   );

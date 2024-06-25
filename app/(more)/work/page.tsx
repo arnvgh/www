@@ -20,18 +20,11 @@ const workPage = () => {
     <section>
       <div className="pb-10">
         <h1 className="text-2xl font-bold pb-8">Work</h1>
-        I love building side projects that solve either my own or someone
-        else&apos;s problems. Here is an extensive list (except for a few which
-        are private or work in progress) of all the stuff I have worked on over
-        the years.
+        Most of my projects are written either to meet my own needs or for the fun of implementing them myself. There are quite a few interesting things I plan to do yet.
         <br />
         <br />
         <p>
-          As a student, I might not have the time for full-time projects, but
-          who knows !?
-          <br />
-          <br />
-          Always happy to discuss an idea — hit me a up at
+          Always happy to discuss new ideas — hit me a up at
           <a
             href="http://x.com/arnvgh"
             className="link ml-1"
@@ -47,65 +40,74 @@ const workPage = () => {
       <h2 className="text-xl font-bold pb-8">Experience</h2>
 
       <h3 className="tetx-md font-semibold">{"<Undisclosed>"}</h3>
+      <p className="text-sm">Jan'24 Remote - Part Time</p>
       <ul className="list-disc p-3">
         <li>
-          <strong>Led the architecture design and implementation</strong>,
+          Led the architecture design and implementation,
           ensuring scalability and cost-effectiveness of the solution.
         </li>
         <li>
-          <strong>Developed a video upload feature</strong> with signed URLs for
+          Developed a video upload feature with signed URLs for
           secure direct uploads to Google Cloud Storage.
         </li>
         <li>
-          <strong>Utilized Cloud Pub/Sub</strong> for asynchronous processing of
+          Utilized Cloud Pub/Sub for asynchronous processing of
           uploaded videos, transcoding them to multiple formats using Cloud Run
           workers.
         </li>
         <li>
-          <strong>Stored video metadata in Firestore</strong> for efficient
+          Stored video metadata in Firestore for efficient
           retrieval and display in the web client.
         </li>
         <li>
-          <strong>Deployed a Next.js web client</strong> hosted on Cloud Run for
-          user interaction.
+          Utilized Cloud Run for user interaction in the web client.
         </li>
-
         <li>
-          <strong>Collaborated with team members</strong> to address limitations
+          Collaborated with team members to address limitations
           and plan future enhancements.
         </li>
       </ul>
       <h3 className="tetx-md font-semibold">{"Physicswallah"}</h3>
+      <p className="text-sm">June'23 Remote - Part-time</p>
       <ul className="list-disc p-3">
         <li>
-          <strong>Implemented an app</strong> allowing teachers to solve student
+          Implemented an app allowing teachers to solve student
           doubts with features such as selecting slide numbers and lectures.
         </li>
         <li>
-          <strong>Integrated APIs</strong> to fetch student doubts and enhanced
+          Integrated APIs to fetch student doubts and enhanced
           functionality with OpenAI API for answer generation.
         </li>
         <li>
-          <strong>Developed multiple doubt resolution modes</strong> including
+          Developed multiple doubt resolution modes including
           voice recording, picture upload, and text input.
         </li>
         <li>
-          <strong>Ensured seamless cross-platform functionality</strong> using
+          Ensured seamless cross-platform functionality using
           React Native's capabilities.
         </li>
         <li>
-          <strong>Collaborated with a senior engineer</strong> to develop key
-          features and <strong>worked closely with the team</strong> to design
+          Collaborated with a senior engineer to develop key
+          features and worked closely with the team to design
           and implement components.
         </li>
         <li>
-          <strong>Contributed to user-friendly interfaces</strong> and engaged
+          Contributed to user-friendly interfaces and engaged
           in discussions to improve features, conducting testing and gathering
           feedback.
         </li>
       </ul>
+
+
       <h2 className="text-xl font-bold py-8">Projects</h2>
-      <Table className="">
+
+      <div className="">TODO: write about my projects here, meanwhile you can checkout my {" "}
+        <a href="http://github.com/arnvgh/" className="link">
+          github
+        </a>.
+      </div>
+      {/* 
+      <Table>
         <TableCaption>A list of my projects.</TableCaption>
         <TableHeader>
           <TableRow>
@@ -136,6 +138,7 @@ const workPage = () => {
           ))}
         </TableBody>
       </Table>
+      */}
     </section>
   );
 };

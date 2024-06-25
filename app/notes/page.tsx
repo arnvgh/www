@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     "My blogs about programming, computers, linux, and occasional life insights.",
 };
 
-const writingPage = () => {
+const notesPage = () => {
   let allBlogs = getBlogPosts();
 
   return (
     <section>
       <div className="md:mt-8 lg:mt-10 pt-8 pb-16">
         <div className="pb-10">
-          <h1 className="text-2xl font-bold pb-8">Writing</h1>
+          <h1 className="text-2xl font-bold pb-8">Notes</h1>
           <p>
             Programming, Computers, Linux, and occasional life insights.
             Subscribe to{" "}
@@ -52,7 +52,7 @@ const writingPage = () => {
               key={post.slug}
               className="w-full cursor-pointer"
               aria-label={post.metadata.title}
-              href={`/writing/${post.slug}`}
+              href={`/notes/${post.slug}`}
             >
               <div className="w-full  py-1 transform hover:scale-[1.01] transition-all">
                 <div className="flex flex-col sm:flex-row justify-between sm:items-center">
@@ -76,4 +76,4 @@ const writingPage = () => {
   );
 };
 
-export default writingPage;
+export default notesPage;

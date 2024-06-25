@@ -1,11 +1,4 @@
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
 import { Intro } from "@/components/misc/(home)/intro";
-import { GridCards } from "@/components/misc/(home)/grid-cards";
-import ContactCard from "@/components/misc/(home)/cards/contact-card";
 
 const Home = () => {
   return (
@@ -14,17 +7,9 @@ const Home = () => {
         Arunava Ghosh
       </h1>
       <div className="max-w-[58ch] text-zinc-600 dark:text-zinc-400">
-        <HoverCard>
-          <HoverCardTrigger className="mr-1">19y/o</HoverCardTrigger>
-          Software Engineer, India
-          <HoverCardContent className="w-auto h-8 p-0 px-2 pt-1">
-            <p>17 Dec, 2004</p>
-          </HoverCardContent>
-        </HoverCard>
+        19yo Software Developer, IN/Remote
       </div>
       <Intro />
-      <GridCards />
-      <ContactCard />
     </section>
   );
 };

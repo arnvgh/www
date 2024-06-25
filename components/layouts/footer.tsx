@@ -1,11 +1,10 @@
 import { clsx } from "clsx";
 import type { ComponentProps } from "react";
 import { Emoji } from "@/components/misc/emoji";
-import Link from "next/link";
 
 function getLatestCommit() {
   const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
-  const label = sha ? sha.slice(0, 7) : null;
+  const label = sha ? sha.slice(0, 7) : "🏗️";
   return label;
 }
 
@@ -38,7 +37,6 @@ export const Footer = ({ className, ...props }: ComponentProps<"footer">) => {
         <span className="dark:text-white"> more </span>
         in the nav for other stuff.
       </div> */}
-
       <hr className="w-full border-t border-zinc-150 dark:border-zinc-800" />
       <div className="flex items-center pt-2">
         <span>

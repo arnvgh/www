@@ -17,7 +17,7 @@ export const faqs: FaqTypes[] = [
   {
     question: "When did you start coding?",
     answer:
-      "I began coding around the age of 12, but I took it more seriously during the lockdown due to the COVID-19 pandemic when schools were closed.",
+      "Technically, I began coding around the age of 12, but I took it more seriously during the lockdown due to the COVID-19 pandemic when schools were closed.",
   },
   {
     question: "How did you learn to code? Can you share some resources?",

@@ -10,7 +10,7 @@ export const GET = () => {
       : "https://arnvgh.me";
 
   const feed = new RSS({
-    title: "Writing @ arnvgh",
+    title: "notes // arnvgh",
     description: "Read my articles about tech, life and anything in between.",
     site_url: `${SITE_URL}`,
     feed_url: `${SITE_URL}/rss.xml`,

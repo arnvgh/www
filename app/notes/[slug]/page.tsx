@@ -32,7 +32,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `https://arnvgh.me/writing/${post.slug}`,
+      url: `https://arnvgh.me/notes/${post.slug}`,
       images: [
         {
           url: ogImage,

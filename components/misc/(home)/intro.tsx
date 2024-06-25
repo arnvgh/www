@@ -6,28 +6,31 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          I am currently a university freshman studying computer algorithms and
-          machine learning. Prior to this, I've worked at some large-scale
-          startups.
+          hi, i am a university freshman mostly studying about
+          computers, my current interestes include neural netowrks, computer graphics
+          and ctfs.
         </p>
         <p>
-          In my free time, I enjoy mathematics, playing chess, participating in
-          programming contests, tweaking my Linux and Vim configurations, and
-          contributing to various open-source projects I care about.
+          beyond my studies, I enjoy mathematics, playing chess (1500+), participating in hackathons, and working on side projects. In my free time, I also like watching {" "}
+          <Link className="text-white link" href="/anime">
+            anime
+          </Link>{" "}
+          and tweaking my linux and (n)vim configurations.
         </p>
+        <p>p.s. I am a big fan of typescript, rust, and python and almost always learning something new about them.</p>
         <div>
           <Link
-            href="/about"
+            href="/notes"
             className="inline-flex link text-black relative dark:text-white/95"
           >
-            about me{" "}
+            notes{" "}
             <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
           </Link>
           <Link
             href="/work"
             className="ml-2 inline-flex link text-black relative dark:text-white/95"
           >
-            work{" "}
+            work + exp.{" "}
             <ArrowUpRight size={10} className="mt-1 ml-[2px] items-center" />
           </Link>
         </div>
@@ -46,7 +49,7 @@ export const Intro = () => {
         ></path>
       </svg>
       <div>
-        Feel free to reach me out at
+        feel free to reach me out at
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
           href="http://x.com/arnvgh"

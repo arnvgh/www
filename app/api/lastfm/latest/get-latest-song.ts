@@ -101,7 +101,6 @@ export async function getLatestSong(): Promise<Response | undefined> {
     };
   } catch (error) {
     console.error(error);
-
     return;
   }
 }

@@ -12,8 +12,8 @@ type navItems = {
 
 const navItems: navItems = [
   { name: "~", href: "/" },
-  { name: "about", href: "/about" },
-  { name: "writing", href: "/writing" },
+  { name: "work", href: "/work" },
+  { name: "notes", href: "/notes" },
 ];
 
 const NavBar = () => {

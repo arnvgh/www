@@ -59,18 +59,6 @@ export function NavMenu() {
           <NavigationMenuContent>
             <ul className="text-white grid w-[150px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[350px]">
               <ListItem
-                title="work"
-                href="/work"
-                className="relative z-10 hover:text-white hover:opacity-80"
-              >
-                <Image
-                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
-                  src={work}
-                  alt="work"
-                  placeholder="blur"
-                />
-              </ListItem>
-              <ListItem
                 title="music"
                 href="/music"
                 className="relative z-10 hover:text-white hover:opacity-80"
@@ -95,6 +83,7 @@ export function NavMenu() {
                   placeholder="blur"
                 />
               </ListItem>
+
               <ListItem
                 title="books"
                 href="/books"
@@ -107,6 +96,20 @@ export function NavMenu() {
                   placeholder="blur"
                 />
               </ListItem>
+
+              <ListItem
+                title="papers"
+                href="/papers"
+                className="relative z-10 hover:text-white hover:opacity-80"
+              >
+                <Image
+                  className="absolute object-cover inset-0 w-full h-full -z-40 rounded-md  brightness-50"
+                  src={work}
+                  alt="work"
+                  placeholder="blur"
+                />
+              </ListItem>
+
               <ListItem
                 title="uses"
                 href="/uses"
