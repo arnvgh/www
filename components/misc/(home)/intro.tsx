@@ -6,12 +6,12 @@ export const Intro = () => {
     <section className="mt-8 text-zinc-600 dark:text-zinc-400">
       <div className="space-y-5">
         <p>
-          hi, i am a university freshman mostly studying about
-          computers, my current interestes include neural netowrks, computer graphics
+          hi, i am currently a university freshman mostly studying about
+          computer algorithms, my interests include neural networks, computer graphics
           and ctfs.
         </p>
         <p>
-          beyond my studies, I enjoy mathematics, playing chess (1500+), participating in hackathons, and working on side projects. In my free time, I also like watching {" "}
+          beyond my studies, I enjoy mathematics, playing chess, participating in hackathons, and working on side projects (i've got plenty of them). In my free time, I also like watching {" "}
           <Link className="text-white link" href="/anime">
             anime
           </Link>{" "}
