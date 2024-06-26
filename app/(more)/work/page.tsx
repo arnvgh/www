@@ -40,7 +40,7 @@ const workPage = () => {
       <h2 className="text-xl font-bold pb-8">Experience</h2>
 
       <h3 className="tetx-md font-semibold">{"<Undisclosed>"}</h3>
-      <p className="text-sm">Jan'24 Remote - Part Time</p>
+      <p className="text-sm">Jan'24 Remote - Freelance</p>
       <ul className="list-disc p-3">
         <li>
           Led the architecture design and implementation,
