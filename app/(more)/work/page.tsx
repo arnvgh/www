@@ -26,12 +26,12 @@ const workPage = () => {
         <p>
           Always happy to discuss new ideas — hit me a up at
           <a
-            href="http://x.com/arnvgh"
+            href="http://x.com/agx86"
             className="link ml-1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @arnvgh
+            @agx86
           </a>
           {""}.
         </p>
