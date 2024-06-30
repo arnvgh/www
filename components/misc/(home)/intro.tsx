@@ -11,7 +11,7 @@ export const Intro = () => {
           and ctfs.
         </p>
         <p>
-          beyond my studies, I enjoy mathematics, playing chess, participating in hackathons, and working on side projects (i've got plenty of them). In my free time, I also like watching {" "}
+          beyond my studies, I enjoy mathematics, playing chess, participating in hackathons, and working on various side projects (got plenty of them :p). In my free time, I also like watching {" "}
           <Link className="text-white link" href="/anime">
             anime
           </Link>{" "}
@@ -52,18 +52,18 @@ export const Intro = () => {
         feel free to reach me out at
         <a
           className="link text-black dark:text-white/95 mx-1 underline underline-offset-auto"
-          href="http://x.com/arnvgh"
+          href="http://x.com/agx86"
           target="_blank"
           rel="noopener noreferrer"
         >
-          @arnvgh
+          @agx86
         </a>
         or
         <a
           className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
           href="mailto:arnvgh@gmail.com"
         >
-          arnvgh@gmail.com
+          agx86work@gmail.com
         </a>
         {""}.
       </div>
