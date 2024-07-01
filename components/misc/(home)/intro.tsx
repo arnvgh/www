@@ -56,16 +56,17 @@ export const Intro = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          @agx86
+          x.com
         </a>
-        or
+        or drop an
         <a
           className="link text-black dark:text-white/95 ml-1 underline-offset-auto underline"
-          href="mailto:arnvgh@gmail.com"
+          href="mailto:agx86work@gmail.com"
         >
-          agx86work@gmail.com
+          email
         </a>
-        {""}.
+        {" "}
+        to me.
       </div>
     </section>
   );
